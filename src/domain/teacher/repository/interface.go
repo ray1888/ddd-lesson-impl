@@ -6,7 +6,8 @@ import (
 )
 
 type TeacherRepository interface {
-	GetTeacherList() ([]read.Teacher, error)
-	GetTeacherInfoById(id int) (read.Teacher, error)
-	AddTeacher(teacherInfo model.Teacher) (bool, error)
+	GetList() ([]*read.Teacher, error)
+	GetInfoById(id int) (*read.Teacher, error)
+	Add(teacherInfo *model.Teacher) (bool, error)
+	Modify(teacherInfo *model.Teacher) (bool, error)
 }

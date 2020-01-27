@@ -6,8 +6,8 @@ import (
 )
 
 type StudentRepository interface {
-	GetStudentInfoById(id int) (read.StudentInfo, error)
-	GetStudentList() ([]read.Student, error)
-	AddStudent(studentInfo model.Student) (bool, error)
-	ModifyStudentInfo(studentInfo model.Student) (bool, error)
+	GetInfoById(id int) (read.StudentInfo, error)
+	GetList() ([]read.Student, error)
+	Add(studentInfo model.Student) (bool, error)
+	Modify(studentInfo model.Student) (bool, error)
 }
