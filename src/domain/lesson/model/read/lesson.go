@@ -1,12 +1,22 @@
 package read
 
-type LessonListModel struct {
-	Id          int
-	Title       string
+type TeacherInfo struct {
+	// Teacher Value Object
 	TeacherName string
-	TeacherID   int
+	Gender      int
+}
+
+type StudentInfo struct {
+	// Student Value Object
 	StudentName string
-	StudentID   int
-	Subject     int
-	GradeId     int
+	Gender      int
+}
+
+type LessonListModel struct {
+	Id      int
+	Title   string
+	Subject int
+	GradeId int
+	StudentInfo
+	TeacherInfo
 }
