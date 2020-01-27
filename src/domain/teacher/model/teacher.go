@@ -1,4 +1,4 @@
-package teacher
+package model
 
 type Teacher struct {
 	Id         int
