@@ -1,4 +1,4 @@
-module github.com/ddd-lesson-impl/v1
+module github.com/ray1888/ddd-lesson/v1
 
 go 1.13
 

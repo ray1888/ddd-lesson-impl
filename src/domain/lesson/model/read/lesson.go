@@ -12,7 +12,7 @@ type StudentInfo struct {
 	Gender      int
 }
 
-type LessonListModel struct {
+type LessonReadModel struct {
 	Id      int
 	Title   string
 	Subject int
